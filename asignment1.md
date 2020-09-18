@@ -1,30 +1,29 @@
 # 1. Design a course management system (Like Canvas)
 
 ## Student
- Data: name, loginCredentials
- Behaviors: LogIn, CheckCourseInfo, WriteAsign, WatchVedio, LogOut
-
+   Data: name, loginCredentials <br>
+   Behaviors: LogIn, CheckCourseInfo, WriteAsign, WatchVedio, LogOut <br>
 
 ## Instructor
- Data: name, loginCredentials
- Behaviors: LogIn, UpLoadAsign, CheckAsign, UploadVedio, UplodTranscript, UploadMessage, LogOut
+   Data: name, loginCredentials <br>
+   Behaviors: LogIn, UpLoadAsign, CheckAsign, UploadVedio, UplodTranscript, UploadMessage, LogOut <br>
 
 ## TA
- Data: name, loginCredentials
- Behaviors: LogIn, CheckAsign, RankAsign, LogOut
+   Data: name, loginCredentials <br>
+   Behaviors: LogIn, CheckAsign, RankAsign, LogOut <br>
 
 ## Course
- Data: name, profile, startTime, endTime, courseNumber, InstuctorName, Address
- Behaviors:
+   Data: name, profile, startTime, endTime, courseNumber, InstuctorName, Address <br>
+   Behaviors: <br>
 
 ## Asignment
- Data: Number, Problem, Answer DueDay, Score
- Behaviors:
+   Data: Number, Problem, Answer DueDay, Score <br>
+   Behaviors: <br>
 
 ## Transcript
-Data: Studentname, Score
- Behaviors:
-
+Data: Studentname, Score <br>
+ Behaviors: <br>
+```
 Instructor siva;
 Student zimu;
 TA yafei;
@@ -43,22 +42,22 @@ if zimu finish asignment
  else zimu do not finish asignment on time
 else zimu do not finish asignment
 siva.UplodTranscript(Studentname, Score);
-
+```
 
 # 2. Design a pet adoption platform
 
 ## Adopter:
- Data: name, loginCredentials,address,phone
- Behaviors: LogIn, search, contact, LogOut 
+ Data: name, loginCredentials,address,phone <br>
+ Behaviors: LogIn, search, contact, LogOut <br>
 
 ## Pet: 
- Data: breed,color,size, age
- Behaviors:
+ Data: breed,color,size, age <br>
+ Behaviors: <br>
 
 ## Adoption Center
- Data: name, pets, address, phone
- Behaviors: checkout, sendConfirmMess, sendRegectMess
-
+ Data: name, pets, address, phone <br>
+ Behaviors: checkout, sendConfirmMess, sendRegectMess <br>
+```
 Adopter zimu;
 Adoption Center DogFamily;
 zimu.LogIn(loginCredentials);
@@ -69,22 +68,22 @@ if AdopterData is NoProblem
  DogFamily.sendConfirmMess(zimu);
 else
  DogFamliy.sendRegectMess(zimu);
-
+```
 
 # 3. Design an app to book airline ticket.
 
 ## Customer:
- Data: emailAddress, Name, loginCredentials, Address, Phone, credit card, PassengerInfo
- Behaviors: logIn, enter, Buy, requestCancelOrder, requestRefund, Search, 
+ Data: emailAddress, Name, loginCredentials, Address, Phone, credit card, PassengerInfo <br>
+ Behaviors: logIn, enter, Buy, requestCancelOrder, requestRefund, Search <br>
 
 ## Flight:
- Data: Number, Origin, destination, time
- Behaviors: 
+ Data: Number, Origin, destination, time <br>
+ Behaviors:  <br>
 
 ## Airline ticket seller
- Data: Flight
- Behaviors: sendReceipt, checkOut, refund, sendSuccessfulMessage
-
+ Data: Flights <br>
+ Behaviors: sendReceipt, checkOut, refund, sendSuccessfulMessage <br>
+```
 Customer zimu;
 Airline ticket seller delta;
 Flight D1222= zimu.search(Number, Origin, destination, time);
@@ -100,17 +99,17 @@ if D1222 is Unfull
  else
   delta.sendSuccessfulMessage(zimu.phone)
 else D1222 is Full
-
+```
 # 4.Design a course registration platform.
 
 ## Student
- Data: name, loginCredentials
- Behaviors: LogIn, search, registerCourse, DropCourse, LogOut
+ Data: name, loginCredentials <br>
+ Behaviors: LogIn, search, registerCourse, DropCourse, LogOut <br>
 
 ## Course
- Data: name, profile, startTime, endTime, courseNumber, InstuctorName, Address
- Behaviors:
-
+ Data: name, profile, startTime, endTime, courseNumber, InstuctorName, Address <br>
+ Behaviors: <br>
+```
 Student zimu;
 zimu. login(loginCredentials);
 Course INFO5100=zimu.search(name, profile, startTime, endTime, courseNumber, InstuctorName, Address);
@@ -123,26 +122,26 @@ if INFO5100 is NoTimeConflict
    zimu.registerCourse(INFO5100)=success;
  else INFO5100 is full
 else INFO5100 is TimeConflict
-
+```
 
 # 5. Order food in a food delivery app.(Like Uber Eats)
 
 ## Customer:
- Data: emailAddress, Name, loginCredentials, Address, Phone, credit card
- Behaviors: logIn, Buy, writeReview, requestCancelOrder, requestRefund, Search, writeReview
+ Data: emailAddress, Name, loginCredentials, Address, Phone, credit card <br>
+ Behaviors: logIn, Buy, writeReview, requestCancelOrder, requestRefund, Search, writeReview <br>
 
 ## Online restaurant:
- Data: Foods, Address, OpenTime, Couriers
- Behaviors: sendReceipt, checkOut, refund, allocateCourier,ship
+ Data: Foods, Address, OpenTime, Couriers <br>
+ Behaviors: sendReceipt, checkOut, refund, allocateCourier,ship <br>
 
 ## Food:
- Data: Name, Taste, price, size
- Behaviors:
+ Data: Name, Taste, price, size <br>
+ Behaviors: <br>
 
 ## Courier:
- Data: Name,
- Behaviors: deliverFood, contactCustomer
-
+ Data: Name, <br>
+ Behaviors: deliverFood, contactCustomer <br>
+```
 Customer zimu;
 Online restaurant: KFC;
 zimu. login(loginCredentials);
@@ -169,4 +168,4 @@ if KFC is inOpenTime
      KFC.refund(zimu);
  else wings outOfStock
 else KFC is Closed
-
+```
