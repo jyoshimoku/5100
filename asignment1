@@ -1,6 +1,6 @@
-1. Design a course management system (Like Canvas)
+# 1. Design a course management system (Like Canvas)
 
-Student
+## Student
  Data: name, loginCredentials
  Behaviors: LogIn, CheckCourseInfo, WriteAsign, WatchVedio, LogOut
 
