@@ -5,23 +5,23 @@
  Behaviors: LogIn, CheckCourseInfo, WriteAsign, WatchVedio, LogOut
 
 
-Instructor
+## Instructor
  Data: name, loginCredentials
  Behaviors: LogIn, UpLoadAsign, CheckAsign, UploadVedio, UplodTranscript, UploadMessage, LogOut
 
-TA
+## TA
  Data: name, loginCredentials
  Behaviors: LogIn, CheckAsign, RankAsign, LogOut
 
-Course
+## Course
  Data: name, profile, startTime, endTime, courseNumber, InstuctorName, Address
  Behaviors:
 
-Asignment
+## Asignment
  Data: Number, Problem, Answer DueDay, Score
  Behaviors:
 
-Transcript
+## Transcript
 Data: Studentname, Score
  Behaviors:
 
@@ -45,17 +45,17 @@ else zimu do not finish asignment
 siva.UplodTranscript(Studentname, Score);
 
 
-2. Design a pet adoption platform
+# 2. Design a pet adoption platform
 
-Adopter:
+## Adopter:
  Data: name, loginCredentials,address,phone
  Behaviors: LogIn, search, contact, LogOut 
 
-Pet: 
+## Pet: 
  Data: breed,color,size, age
  Behaviors:
 
-Adoption Center
+## Adoption Center
  Data: name, pets, address, phone
  Behaviors: checkout, sendConfirmMess, sendRegectMess
 
@@ -71,17 +71,17 @@ else
  DogFamliy.sendRegectMess(zimu);
 
 
-3. Design an app to book airline ticket.
+# 3. Design an app to book airline ticket.
 
-Customer:
+## Customer:
  Data: emailAddress, Name, loginCredentials, Address, Phone, credit card, PassengerInfo
  Behaviors: logIn, enter, Buy, requestCancelOrder, requestRefund, Search, 
 
-Flight:
+## Flight:
  Data: Number, Origin, destination, time
  Behaviors: 
 
-Airline ticket seller
+## Airline ticket seller
  Data: Flight
  Behaviors: sendReceipt, checkOut, refund, sendSuccessfulMessage
 
@@ -101,13 +101,13 @@ if D1222 is Unfull
   delta.sendSuccessfulMessage(zimu.phone)
 else D1222 is Full
 
-4.Design a course registration platform.
+# 4.Design a course registration platform.
 
-Student
+## Student
  Data: name, loginCredentials
  Behaviors: LogIn, search, registerCourse, DropCourse, LogOut
 
-Course
+## Course
  Data: name, profile, startTime, endTime, courseNumber, InstuctorName, Address
  Behaviors:
 
@@ -125,21 +125,21 @@ if INFO5100 is NoTimeConflict
 else INFO5100 is TimeConflict
 
 
-5. Order food in a food delivery app.(Like Uber Eats)
+# 5. Order food in a food delivery app.(Like Uber Eats)
 
-Customer:
+## Customer:
  Data: emailAddress, Name, loginCredentials, Address, Phone, credit card
  Behaviors: logIn, Buy, writeReview, requestCancelOrder, requestRefund, Search, writeReview
 
-Online restaurant:
+## Online restaurant:
  Data: Foods, Address, OpenTime, Couriers
  Behaviors: sendReceipt, checkOut, refund, allocateCourier,ship
 
-Food:
+## Food:
  Data: Name, Taste, price, size
  Behaviors:
 
-Courier:
+## Courier:
  Data: Name,
  Behaviors: deliverFood, contactCustomer
 
